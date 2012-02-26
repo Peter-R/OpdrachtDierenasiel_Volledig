@@ -1,0 +1,23 @@
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\bin\Debug\OpdrachtDierenasiel1.XML
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\obj\Debug\OpdrachtDierenasiel1.exe
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\obj\Debug\OpdrachtDierenasiel1.pdb
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\obj\Debug\OpdrachtDierenasiel1.FormDierenasiel.resources
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\obj\Debug\OpdrachtDierenasiel1.Properties.Resources.resources
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\obj\Debug\ResGen.read.1.tlog
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\obj\Debug\ResGen.write.1.tlog
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\bin\Debug\OpdrachtDierenasiel1.exe
+C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\bin\Debug\OpdrachtDierenasiel1.pdb
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\bin\Debug\OpdrachtDierenasiel1.XML
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\bin\Debug\OpdrachtDierenasiel1.exe
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\bin\Debug\OpdrachtDierenasiel1.pdb
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\obj\Debug\ResolveAssemblyReference.cache
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\obj\Debug\OpdrachtDierenasiel1.FormDierenasiel.resources
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\obj\Debug\OpdrachtDierenasiel1.Properties.Resources.resources
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\obj\Debug\ResGen.read.1.tlog
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\obj\Debug\ResGen.write.1.tlog
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\obj\Debug\OpdrachtDierenasiel1.exe
+E:\Fontys Programmeer Projecten\OpdrachtDierenasiel_Volledig\obj\Debug\OpdrachtDierenasiel1.pdb
+E:\repo\OpdrachtDierenasiel_Volledig\bin\Debug\OpdrachtDierenasiel1.XML
+E:\repo\OpdrachtDierenasiel_Volledig\obj\Debug\OpdrachtDierenasiel1.exe
+E:\repo\OpdrachtDierenasiel_Volledig\obj\Debug\OpdrachtDierenasiel1.pdb

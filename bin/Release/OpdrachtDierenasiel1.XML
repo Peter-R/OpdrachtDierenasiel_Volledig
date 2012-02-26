@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpdrachtDierenasiel1</name>
+    </assembly>
+    <members>
+        <member name="T:OpdrachtDierenasiel1.Hond">
+            <summary>
+            Een <b>hond</b> heeft, net als en huisdier,  een chipnummer, een geboortejaar en een roepnaam. Verder wordt vastgelegd of het huisdier gereserveerd is of niet. 
+            Verder wordt van elke hond bijgehouden wanneer deze voor het laatst uitgelaten is. Indien de laatst uitgelaten dag onbekend is, is dit 00:00:0000.</summary>
+        </member>
+        <member name="T:OpdrachtDierenasiel1.Huisdier">
+            <summary>
+            Een <b>huisdier</b> heeft een chipnummer, een geboortejaar en een roepnaam. Verder wordt vastgelegd of het huisdier gereserveerd is of niet. 
+            </summary>
+        </member>
+        <member name="F:OpdrachtDierenasiel1.Huisdier.chipnummer">
+            <summary>
+            velden van huisdier
+            </summary>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.Huisdier.#ctor(System.String,System.Int32,System.String,System.Boolean)">
+             <summary>
+             <p>deze constructor creert een huisdier volgens opgegeven chipnummer, geboortejaar, roepnaam en wel/niet gereserveerd.</p>
+             
+             <p>Het chipnummer wordt altijd als een string met lengte 5 opgeslagen.<p>
+             Indien het opgegeven chipnummer te kort is, dan wordt het 'aan de voorkant' aangevuld met nullen.</p>
+             <p>Indien het opgegeven chipnummer te lang is, dan worden alleen de eerste 5 karakters opgeslagen.</p>
+             </p> 
+             <p>Het geboortejaar wordt opgeslagen als een 4-cijferig getal, indien het geboortejaar bekend is. Anders wordt -1 opgeslagen.</p> 
+            
+             <p>De naam van het dier wordt opgeslagen in roepnaam, indien bekend. Indien onbekend, dan is de
+             roepnaam mits roepnaam gelijk aan "noname"</p> 
+            
+             <p>Indien afgesproken is dat het huisdier door een (toekomstige) eigenaar wordt opgehaald,
+             dan is de boolean gereserveerd gelijk aan true; en anders is die boolean false.</p> 
+             </summary>
+             <param name="chipnummer">de eerste 5 karakters van deze string worden opgeslagen</param>
+             <param name="geboortejaar">jaar van geboorte van het huisdier</param>
+             <param name="roepnaam">de roepnaam van het huisdier</param>
+             <param name="gereserveerd">of het huisdier is gereserveerd</param>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.Huisdier.GetInfo">
+            <summary>
+            Alle informatie met betrekking tot huisdier is opgeleverd in de voorgeschreven vorm
+            </summary>
+            <returns>een string van de vorm: eerst het vijfcijferige chipnummer, dan een komma, dan een spatie,
+            dan een viercijferig geboortejaar ("0000" indien onbekend), dan een komma, dan een spatie,
+            dan de roepnaam, dan een spatie en 
+            dan "gereserveerd" of "niet gereserveerd", al naar gelang het dier gereserveerd is.
+            </returns>
+        </member>
+        <member name="P:OpdrachtDierenasiel1.Huisdier.Chipnummer">
+            <summary>
+            het chipnummer van het huisdier
+            </summary>
+        </member>
+        <member name="P:OpdrachtDierenasiel1.Huisdier.Geboortejaar">
+            <summary>
+            het geboortejaar van het huisdier
+            </summary>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.Hond.#ctor(System.String,System.Int32,System.String,System.Boolean)">
+             <summary>
+             <p>deze constructor creert een hond volgens opgegeven chipnummer, geboortejaar, roepnaam en wel/niet gereserveerd.</p>
+             
+             <p>Het chipnummer wordt altijd als een string met lengte 5 opgeslagen.<p>
+             Indien het opgegeven chipnummer te kort is, dan wordt het 'aan de voorkant' aangevuld met nullen.</p>
+             <p>Indien het opgegeven chipnummer te lang is, dan worden alleen de eerste 5 karakters opgeslagen.</p>
+             </p> 
+             <p>Het geboortejaar wordt opgeslagen als een 4-cijferig getal, indien het geboortejaar bekend is. Anders wordt -1 opgeslagen.</p> 
+            
+             <p>De naam van het dier wordt opgeslagen in roepnaam, indien bekend. Indien onbekend, dan is de
+             roepnaam mits roepnaam gelijk aan "noname"</p> 
+            
+             <p>Indien afgesproken is dat het huisdier door een (toekomstige) eigenaar wordt opgehaald,
+             dan is de boolean gereserveerd gelijk aan true; en anders is die boolean false.</p> 
+            
+             <p>De dag, waarop de hond voor het laatst uitgelaten werd, is 00:00:0000.</p> 
+             </summary>
+             <param name="chipnummer">de eerste 5 karakters van deze string worden opgeslagen</param>
+             <param name="geboortejaar">jaar van geboorte van het huisdier</param>
+             <param name="roepnaam">de roepnaam van het huisdier</param>
+             <param name="gereserveerd">of het huisdier is gereserveerd</param>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.Hond.GetInfo">
+            <summary>
+            Alle informatie met betrekking tot hond is opgeleverd in de voorgeschreven vorm
+            </summary>
+            <returns>een string van de vorm: eerst "HOND: ", dan het vijfcijferige chipnummer, dan een komma, dan een spatie,
+            dan een viercijferig geboortejaar ("0000" indien onbekend), dan een komma, dan een spatie,
+            dan de roepnaam, dan een spatie en 
+            dan "gereserveerd" of "niet gereserveerd", al naar gelang het dier gereserveerd is,
+            dan een komma en de dag waarop de hond voor het laatst uitgelaten is.
+            </returns>
+        </member>
+        <member name="T:OpdrachtDierenasiel1.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:OpdrachtDierenasiel1.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:OpdrachtDierenasiel1.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:OpdrachtDierenasiel1.FormDierenasiel">
+            <summary>
+            Formulier om dierenasiel te kunnen testen
+            </summary>
+            <summary>
+            Een windows application om inheritance te testen.
+            Als voorbeeld nemen we de classes Hond en Kat, die erven van de class Huisdier.
+            </summary>
+        </member>
+        <member name="F:OpdrachtDierenasiel1.FormDierenasiel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.FormDierenasiel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.FormDierenasiel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.FormDierenasiel.#ctor">
+            <summary>
+            Deze constructor creeert een applicatie. 
+            <p>De variabele h (van het type Huisdier) is gelijk aan null.</p>
+            </summary>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.FormDierenasiel.btnMaakDier_Click(System.Object,System.EventArgs)">
+            <summary>
+            Afhankelijk van of de radiobutton "hond" of "kat" is aangevinkt,
+            wordt "h = new Hond(...);" of  "h = new Kat(...);" uitgevoerd. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.FormDierenasiel.btnGeefInfo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Informatie over huisdier h verschijnt op het scherm.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:OpdrachtDierenasiel1.Kat">
+            <summary>
+            Een <b>kat</b> heeft, net als en huisdier,  een chipnummer, een geboortejaar en een roepnaam. Verder wordt vastgelegd of het huisdier gereserveerd is of niet. 
+            Verder wordt van elke kat extra informatie over zijn/haar gedrag bijgehouden.</summary>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.Kat.#ctor(System.String,System.Int32,System.String,System.Boolean,System.String)">
+             <summary>
+             <p>deze constructor creert een kat volgens opgegeven chipnummer, geboortejaar, roepnaam en wel/niet gereserveerd.</p>
+             
+             <p>Het chipnummer wordt altijd als een String met lengte 5 opgeslagen.<p>
+             Indien het opgegeven chipnummer te kort is, dan wordt het 'aan de voorkant' aangevuld met nullen.</p>
+             <p>Indien het opgegeven chipnummer te lang is, dan worden alleen de eerste 5 karakters opgeslagen.</p>
+             </p> 
+             <p>Het geboortejaar wordt opgeslagen als een 4-cijferig getal, indien het geboortejaar bekend is. Anders wordt -1 opgeslagen.</p> 
+            
+             <p>De naam van het dier wordt opgeslagen in roepnaam, indien bekend. Indien onbekend, dan is de
+             roepnaam mits roepnaam gelijk aan "noname"</p> 
+            
+             <p>Indien afgesproken is dat het huisdier door een (toekomstige) eigenaar wordt opgehaald,
+             dan is de boolean gereserveerd gelijk aan true; en anders is die boolean false.</p> 
+            
+             <p>In een string kan extra informatie over de kat opgeslagen worden.</p> 
+             </summary>
+             <param name="chipnummer">de eerste 5 karakters van deze string worden opgeslagen</param>
+             <param name="geboortejaar">jaar van geboorte van het huisdier</param>
+             <param name="roepnaam">de roepnaam van het huisdier</param>
+             <param name="gereserveerd">of het huisdier is gereserveerd</param>
+             <param name="extraInfo">extra informatie over de kat</param>
+        </member>
+        <member name="M:OpdrachtDierenasiel1.Kat.GetInfo">
+            <summary>
+            Alle informatie met betrekking tot hond is opgeleverd in de voorgeschreven vorm
+            </summary>
+            <returns>een string van de vorm: eerst "KAT: ", dan het vijfcijferige chipnummer, dan een komma, dan een spatie,
+            dan een viercijferig geboortejaar ("0000" indien onbekend), dan een komma, dan een spatie,
+            dan de roepnaam, dan een spatie en 
+            dan "gereserveerd" of "niet gereserveerd", al naar gelang het dier gereserveerd is,
+            vervolgens een komma gevolgd door spatie gevolgd door de extra informatie
+            </returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="OpdrachtDierenasiel1">
+</Property><Property Name="Solution File" Value="C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\OpdrachtDierenasiel1.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\OpdrachtDierenasiel1.suo">
+</Property><Property Name="Date" Value="Saturday, February 25, 2012">
+</Property><Property Name="Time" Value="23:35 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="OpdrachtDierenasiel1.sln" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\OpdrachtDierenasiel1.sln">
+</Event><Event ErrorLevel="0" Project="" Source="OpdrachtDierenasiel1.suo" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\OpdrachtDierenasiel1.suo">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="OpdrachtDierenasiel1.csproj" Description="Project file successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\OpdrachtDierenasiel1.csproj">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="FormDierenasiel.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\FormDierenasiel.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="FormDierenasiel.Designer.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\FormDierenasiel.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Hond.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Hond.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Huisdier.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Huisdier.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Kat.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Kat.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Program.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Dierenasiel.cd" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Dierenasiel.cd">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Properties\Settings.settings" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="FormDierenasiel.resx" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\FormDierenasiel.resx">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="Properties\Resources.resx" Description="File successfully backed up as C:\Users\Peter\Documents\Sample\Dierenasiel1\OpdrachtDierenasiel1\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="1" Project="OpdrachtDierenasiel1" Source="OpdrachtDierenasiel1.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="OpdrachtDierenasiel1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="OpdrachtDierenasiel1" Source="OpdrachtDierenasiel1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="OpdrachtDierenasiel1.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="OpdrachtDierenasiel1.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="OpdrachtDierenasiel1" Source="OpdrachtDierenasiel1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
