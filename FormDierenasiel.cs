@@ -70,7 +70,7 @@ namespace OpdrachtDierenasiel1
             {
                 if (!asiel.VoegHuisdierToe(h))
                 {
-                    if (asiel.AantalHuisdierenAanwezig == asiel.Capaciteit)
+                    if (asiel.IsVol)
                     {
                         MessageBox.Show("Het dierenasiel zit helemaal vol en kan momenteel geen huisdieren meer aannemen.", "Waarschuwing:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         break;
@@ -178,7 +178,7 @@ namespace OpdrachtDierenasiel1
             }
             else
             {
-                if (asiel.AantalHuisdierenAanwezig == asiel.Capaciteit)
+                if (asiel.IsVol)
                     MessageBox.Show("Het dierenasiel zit helemaal vol en kan momenteel geen huisdieren meer aannemen.", "Waarschuwing:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                     MessageBox.Show(string.Format("Het huisdier met chipnummer \"{0}\" staat al in het systeem.", h.Chipnummer), "Waarschuwing:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -239,7 +239,7 @@ namespace OpdrachtDierenasiel1
             lvGereserveerd.Items.Clear();
             lvNietGereserveerd.Items.Clear();
 
-            for (int index = 0; index < asiel.AantalHuisdierenAanwezig; index++)
+            for (int index = 0; index < asiel.AantalHuisdieren; index++)
             {
                 Huisdier h = asiel.GetHuisdierMetIndex(index);
 
@@ -254,34 +254,33 @@ namespace OpdrachtDierenasiel1
             }
         }
 
-        private void lvGereserveerd_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            foreach (ListViewItem item in lvGereserveerd.Items)
+        private Huisdier HaalGeselecteerdHuisdierOp(ListView.ListViewItemCollection collection)
+        {            
+            foreach (ListViewItem item in collection)
             {
-                if (item.Selected == true)
+                if (item.Selected)
                 {
-                    string chipnr = item.Text;
-                    Huisdier h = asiel.GetHuisdierMetChipnummer(chipnr);
-                    pbFoto.Image = h.Foto;
-                    
-                    break;
+                    return asiel.GetHuisdierMetChipnummer(item.Text);                    
                 }
             }
+
+            return null;
+        }
+
+        private void lvGereserveerd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Huisdier h = HaalGeselecteerdHuisdierOp(lvGereserveerd.Items);
+
+            if (h != null)
+                pbFoto.Image = h.Foto;            
         }
 
         private void lvNietGereserveerd_SelectedIndexChanged(object sender, EventArgs e)
         {
-            foreach (ListViewItem item in lvNietGereserveerd.Items)
-            {
-                if (item.Selected)
-                {
-                    string chipnr = item.Text;
-                    Huisdier h = asiel.GetHuisdierMetChipnummer(chipnr);
-                    pbFoto.Image = h.Foto;                    
+            Huisdier h = HaalGeselecteerdHuisdierOp(lvNietGereserveerd.Items);
 
-                    break;
-                }
-            }
+            if (h != null)
+                pbFoto.Image = h.Foto;                           
         }
 
         private void btToonGroteFoto_Click(object sender, EventArgs e)
@@ -291,37 +290,21 @@ namespace OpdrachtDierenasiel1
 
         private void btKloonHuisdier_Click(object sender, EventArgs e)
         {
-            if (asiel.AantalHuisdierenAanwezig == asiel.Capaciteit)
+            if (asiel.IsVol)
             {
                 MessageBox.Show("Het dierenasiel zit helemaal vol en kan momenteel geen huisdieren meer aannemen.", "Waarschuwing:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            Huisdier h = null;
-
-            foreach (ListViewItem item in lvGereserveerd.Items)
+            Huisdier h = HaalGeselecteerdHuisdierOp(lvGereserveerd.Items);
+            if (h == null)
             {
-                if (item.Selected)
-                {
-                    h = asiel.GetHuisdierMetChipnummer(item.Text);
-                    break;
-                }
+                h = HaalGeselecteerdHuisdierOp(lvNietGereserveerd.Items);
+                if (h == null) return;
             }
 
-            foreach (ListViewItem item in lvNietGereserveerd.Items)
-            {
-                if (item.Selected)
-                {
-                    h = asiel.GetHuisdierMetChipnummer(item.Text);
-                    break;
-                }
-            }
-
-            if (h != null)
-            {
-                Huisdier kloon = (Huisdier)h.Clone();                
-                MessageBox.Show(kloon.GetInfo(), "Informatie kloon:", MessageBoxButtons.OK, MessageBoxIcon.Information);                
-            }
+            Huisdier kloon = (Huisdier)h.Clone();
+            MessageBox.Show(kloon.GetInfo(), "Informatie kloon:", MessageBoxButtons.OK, MessageBoxIcon.Information);                                        
         }
     }
 }

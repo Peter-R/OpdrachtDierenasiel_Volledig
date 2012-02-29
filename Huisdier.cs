@@ -8,7 +8,7 @@ namespace OpdrachtDierenasiel1
     /// <summary>
     /// Een <b>huisdier</b> heeft een chipnummer, een geboortejaar en een roepnaam. Verder wordt vastgelegd of het huisdier gereserveerd is of niet. 
     /// </summary>
-    public class Huisdier : IDier, ICloneable
+    public abstract class Huisdier : IDier, ICloneable
     {
         /// <summary>
         /// velden van huisdier
@@ -79,10 +79,7 @@ namespace OpdrachtDierenasiel1
         /// </summary>
         public String Chipnummer
         {
-            get 
-            { 
-                return chipnummer;
-            }
+            get { return chipnummer; }
         }
 
         /// <summary>
@@ -90,10 +87,7 @@ namespace OpdrachtDierenasiel1
         /// </summary>
         public int Geboortejaar
         {
-            get
-            {
-                return geboortejaar;
-            }
+            get { return geboortejaar; }
         }
 
         /// <summary>
@@ -101,15 +95,8 @@ namespace OpdrachtDierenasiel1
         /// </summary>
         public bool Gereserveerd
         {
-            get
-            {
-                return gereserveerd;
-            }
-
-            set
-            {
-                gereserveerd = value;
-            }
+            get { return gereserveerd; }
+            set { gereserveerd = value; }
         }
 
         /// <summary>

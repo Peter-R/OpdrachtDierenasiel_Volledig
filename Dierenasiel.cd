@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="OpdrachtDierenasiel1.Hond">
-    <Position X="3.75" Y="4.25" Width="4.75" />
+    <Position X="9" Y="0.75" Width="4.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAIAAAAAAAAAAAEAAAAAAEAAAAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAIAAAAgAAAAAAEAgAAAAEAAAAAA=</HashCode>
       <FileName>Hond.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OpdrachtDierenasiel1.Huisdier">
     <Position X="3.25" Y="0.75" Width="5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAIAAAACAAgAAgAIAEAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAAAAIAAAACAAgAAgAIAEAgAAAIQAAACFA=</HashCode>
       <FileName>Huisdier.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="OpdrachtDierenasiel1.Kat">
-    <Position X="0.5" Y="6.5" Width="5.5" />
+    <Position X="3" Y="5.25" Width="5.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAAA=</HashCode>
       <FileName>Kat.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -32,7 +32,7 @@
       <Field Name="rdBtnKat" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>8QcQgAAAACAEhBQCAACAjAAiEAgAAkAACCKCJBAKBAg=</HashCode>
+      <HashCode>8QcQgAAAACAEhBQCAADAjAAiEAgAE0AgDyKCJBAqDgg=</HashCode>
       <FileName>FormDierenasiel.cs</FileName>
     </TypeIdentifier>
   </Class>

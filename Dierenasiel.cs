@@ -32,11 +32,15 @@ namespace OpdrachtDierenasiel1
         /// <summary>
         /// Aantal dieren aanwezig
         /// </summary>
-        public int AantalHuisdierenAanwezig
+        public int AantalHuisdieren
         {
             get { return huisdieren.Count; }
         }
 
+        public bool IsVol
+        {
+            get { return Capaciteit == AantalHuisdieren; }
+        }
         /// <summary>
         /// ALS in het dierenasiel al een huisdier voorkomt met 
         /// chipnummer gelijk aan chipnr,
